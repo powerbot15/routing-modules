@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UnauthLandingComponent } from './components/unauth-landing/unauth-landing.component';
-
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -12,7 +12,8 @@ import { UnauthLandingComponent } from './components/unauth-landing/unauth-landi
     UnauthLandingComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ]
 })
 export class LandingModule { }

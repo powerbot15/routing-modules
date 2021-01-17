@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {ApiService} from './services/api.service';
-import { AuthService } from './services/auth.service';
+import { CopyrightsComponent } from './components/copyrights/copyrights.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    CopyrightsComponent
+  ],
   imports: [
     CommonModule
   ],
-  providers: [
-    ApiService,
-    AuthService
+  providers: [],
+  exports: [
+    CopyrightsComponent
   ]
 })
 export class SharedModule { }
